@@ -3,7 +3,7 @@
    "how to change link color." */
 
 #entrybox {
-  height: 500px;
+  height: auto;
   width: 500px;
   padding: 40px;
   background-color: white;
@@ -37,7 +37,7 @@
 
 @font-face {
   font-family: "basiic";
-  src: url(basiic.ttf);
+  src: url("fonts/basiic.ttf");
 }
 
 #sex {
@@ -60,4 +60,9 @@
   top: 90px;
   right:600px;
   z-index: 10;
+}
+
+#title {
+  font-family: "mini-wakuwaku";
+  src: url("fonts/mini-wakuwaku.otf") format("opentype");
 }
