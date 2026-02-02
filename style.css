@@ -1,0 +1,63 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+#entrybox {
+  height: 500px;
+  width: 500px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 25px;
+  border-width: 9px;
+  border-style: solid;
+  border-image: url(graphics/laceborder.png) 20% round;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  position: absolute;
+  font-family: basiic;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#toprow {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+#bun {
+  height: 100px;
+  width: auto;
+  margin-top: 40px;
+}
+
+@font-face {
+  font-family: "basiic";
+  src: url(basiic.ttf);
+}
+
+#sex {
+  margin-top: auto;
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#crying {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+}
+
+#button {
+  width: 200px;
+  height: auto;
+  position:absolute;
+  top: 90px;
+  right:600px;
+  z-index: 10;
+}
