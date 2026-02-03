@@ -11,58 +11,58 @@
   border-width: 9px;
   border-style: solid;
   border-image: url(graphics/laceborder.png) 20% round;
-
   display: flex;
   flex-direction: column;
-
   margin: 0 auto;
-  position: absolute;
+  position: relative;
   font-family: basiic;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  align-items: center;
 }
 
-#toprow {
+body {
+  background-image: url(graphics/d39-bg-polkadot.gif);
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
-#bun {
-  height: 100px;
-  width: auto;
-  margin-top: 40px;
-}
 
 @font-face {
   font-family: "basiic";
   src: url("fonts/basiic.ttf");
 }
 
-#sex {
-  margin-top: auto;
-  width: 400px;
-  height: auto;
-  margin: 0 auto;
+p {
+  font-family: basiic;
+  text-align: center;
 }
 
-#crying {
-  width: 20px;
-  height: auto;
-  vertical-align: middle;
+@font-face {
+  font-family: "mini-wakuwaku";
+  src: url("fonts/mini-wakuwaku.otf") format("opentype");
 }
 
 #button {
   width: 200px;
   height: auto;
-  position:absolute;
-  top: 90px;
-  right:600px;
+  position: absolute;
+  top: 125px;
+  right: 600px;
   z-index: 10;
 }
 
-#title {
+#welcome {
   font-family: "mini-wakuwaku";
-  src: url("fonts/mini-wakuwaku.otf") format("opentype");
+  font-size: 40px;
+  text-align: center;
+  margin:10;
 }
+
+#enterzakuro {
+  width: 100px;
+  height: auto;
+  filter:grayscale(100%);
+}
+
