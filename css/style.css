@@ -10,7 +10,7 @@
   border-radius: 25px;
   border-width: 9px;
   border-style: solid;
-  border-image: url(graphics/laceborder.png) 20% round;
+  border-image: url(../assets/graphics/laceborder.png) 20% round;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -20,7 +20,7 @@
 }
 
 body {
-  background-image: url(graphics/d39-bg-polkadot.gif);
+  background-image: url(../assets/graphics/d39-bg-polkadot.gif);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +31,7 @@ body {
 
 @font-face {
   font-family: "basiic";
-  src: url("fonts/basiic.ttf");
+  src: url("../assets/fonts/basiic.ttf");
 }
 
 p {
@@ -41,16 +41,15 @@ p {
 
 @font-face {
   font-family: "mini-wakuwaku";
-  src: url("fonts/mini-wakuwaku.otf") format("opentype");
+  src: url("../assets/fonts/mini-wakuwaku.otf") format("opentype");
 }
 
 #button {
   width: 200px;
   height: auto;
   position: absolute;
-  top: 23%;
-  right: 30%;
-  transform: translateY(-50%);
+  top: -9px;
+  right: -9px;
   z-index: 10;
 }
 
