@@ -1,7 +1,7 @@
-/* home.css - zakuro's personal space */
+/* home stylesheet */
 
 body {
-  background-image: url(../assets/graphics/d39-bg-polkadot.gif);
+  background-image: url(../assets/graphics/greystripe.gif);
   min-height: 100vh;
   margin: 0;
   font-family: basiic;
@@ -10,4 +10,54 @@ body {
 @font-face {
   font-family: "basiic";
   src: url("../assets/fonts/basiic.ttf");
+}
+
+#page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box-wrapper {
+  position: relative;
+}
+
+.box {
+  padding: 30px;
+  border-style: solid;
+  border-radius: 25px;
+  border-width: 9px;
+  border-image: url(../assets/graphics/laceborder.png) 20% round;
+  background-color: white;
+  display: flex;
+  position: relative;
+}
+
+#main-box {
+  width: 400px;
+  height: 600px;
+}
+
+#sitemap {
+  width: 140px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  margin-right: 20px;
+}
+
+#sitemap h3 {
+  margin: 0 0 10px;
+}
+
+#sitemap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#sitemap li {
+  margin-bottom: 8px;
 }
