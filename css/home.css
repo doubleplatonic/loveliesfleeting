@@ -35,6 +35,23 @@ body {
   padding: 15px 30px;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#status iframe {
+  display: block;
+}
+
+#status img {
+  width: 80px;
+  height: auto;
+  display: block;
+}
+
+#status img.panda {
+  display: block;
+  margin: 20px auto;
 }
 
 .box {
@@ -87,7 +104,10 @@ body {
 #main-box {
   width: 400px;
   height: 600px;
+  position: relative;
 }
+
+
 
 #side {
   position: absolute;
@@ -100,23 +120,31 @@ body {
   gap: 20px;
 }
 
-#sitemap {
+#nav {
   width: 140px;
   height: 150px;
 }
 
-#sitemap h3 {
+#nav h3 {
   margin: 0 0 10px;
 }
 
-#sitemap ul {
+#nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#sitemap li {
+#nav li {
   margin-bottom: 8px;
+}
+
+#nav img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 8px auto;
+  border-radius: 5px;
 }
 
 .lines {
