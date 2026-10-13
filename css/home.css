@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: basiic;
   filter: grayscale(100%);
+  font-size: 13px;
 }
 
 @font-face {
@@ -25,45 +26,58 @@ body {
   align-items: center;
 }
 
+#info h3 {
+  margin: 0 0 10px;
+}
+
 #box-wrapper {
   position: relative;
 }
 
-#status {
-  width: 140px;
+#cal {
+  width: auto;
   height: auto;
-  padding: 15px 30px;
+  padding: 0;
   justify-content: center;
-  align-items: center;
+  padding: 3px;
   display: flex;
-  flex-direction: column;
-}
-
-#status iframe {
-  display: block;
-}
-
-#status img {
-  width: 80px;
-  height: auto;
-  display: block;
-}
-
-#status img.panda {
-  display: block;
-  margin: 20px auto;
-}
-
-.box {
-  padding: 30px;
+  align-self: center;
   border-style: solid;
-  border-radius: 25px;
   border-width: 10px;
   border-image: url(../assets/graphics/laceborder.png) 20% round;
   background-color: white;
+  background-clip: padding-box;
+}
+
+#cal iframe {
+  display: block;
+}
+
+
+
+#nav img.panda {
+  display: block;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.box {
+  padding: 15px;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 10px;
+  border-image: url(../assets/graphics/laceborder.png) 20% round;
+  background-color: white;
+  background-clip: padding-box;
   display: flex;
   position: relative;
   height: 90vh;
+}
+
+p {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .madohomu {
@@ -81,7 +95,7 @@ body {
   position: center;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .banner {
@@ -102,8 +116,9 @@ body {
 }
 
 #main-box {
-  width: 400px;
+  width: 500px;
   height: 600px;
+  overflow: scroll;
   position: relative;
 }
 
@@ -121,7 +136,7 @@ body {
 }
 
 #nav {
-  width: 140px;
+  width: 145px;
   height: 150px;
 }
 
@@ -139,45 +154,52 @@ body {
   margin-bottom: 8px;
 }
 
-#nav img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 8px auto;
-  border-radius: 5px;
+#nav a {
+  display: inline-block;
+  transition: transform 0.2s ease;
 }
 
+#nav a:hover {
+  transform: scale(1.15);
+  transform-origin: left center;
+}
+
+
 .lines {
-position: fixed;
-left: 0;
-top: 0;
-width: 100vw;
-height: 100vh;
-pointer-events: none;
-z-index: 300;
-opacity: 0.05;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 300;
+  opacity: 0.05;
 }
- 
+
 .lines:before {
-content: '';
-position: absolute;
-left: 0;
-top: 0;
-right: 0;
-bottom: 0;
-pointer-events: none;
-background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
-background-size: 100% 4px;
-will-change: background, background-size; animation: scanlines 0.2s linear infinite;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+  background-size: 100% 4px;
+  will-change: background, background-size;
+  animation: scanlines 0.2s linear infinite;
 }
- 
+
 @keyframes scanlines {
-from {
-background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .5) 51%); background-size: 100% 4px; }
-to {
-background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
-background-size: 100% 4px;
+  from {
+    background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .5) 51%);
+    background-size: 100% 4px;
+  }
+
+  to {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+    background-size: 100% 4px;
+  }
 }
-}
+
 @media only screen and (max-width: 600px);
-{
